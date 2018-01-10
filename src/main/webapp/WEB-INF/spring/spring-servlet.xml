@@ -12,16 +12,36 @@
 
     <mvc:annotation-driven/>
 
+    <mvc:resources mapping="/recursos/**"
+                   location="/recursos/"
+                   cache-period="120"/>
+
     <context:annotation-config/>
 
-    <context:component-scan base-package="br.com.rodrigopeleias"/>
+    <context:component-scan base-package="br.com.rodrigopeleias.controller"/>
 
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix">
-            <value>/views/</value>
+    <bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/tiles/tiles-config.xml</value>
+            </list>
         </property>
-        <property name="suffix">
-            <value>.jsp</value>
-        </property>
+    </bean>
+
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"/>
+    </bean>
+
+    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+    <!--<property name="prefix">-->
+    <!--<value>/views/</value>-->
+    <!--</property>-->
+    <!--<property name="suffix">-->
+    <!--<value>.jsp</value>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="50000000"/>
     </bean>
 </beans>

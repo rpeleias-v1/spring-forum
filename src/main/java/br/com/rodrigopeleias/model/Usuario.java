@@ -19,6 +19,7 @@ public class Usuario implements Serializable {
     @Id
     @Generated(GenerationTime.INSERT)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     protected long id;
 
     @NotNull
