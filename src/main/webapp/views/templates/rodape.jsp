@@ -1,16 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:39
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div id="rodape">
+    <p class="twelve columns">
+        <b>Spring Fórum</b> - Desenvolvido por Kico Weissmann
+    </p>
+    Baseado no livro <<a href="http://www.casadocodigo.com.br/products/spring">Virando o Jogo com Spring Framework</a>
+</div>

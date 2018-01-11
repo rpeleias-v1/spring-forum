@@ -1,16 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:38
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div style="background: #48762A;">
+    <div class="chamada row">
+        <div class="twelve columns">
+            <h3 style="color: white">
+                <h3 style="color:white">${assunto.nome}</h3>
+            </h3>
+        </div>
+    </div>
+</div>

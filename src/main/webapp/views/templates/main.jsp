@@ -1,16 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:39
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
+
 <html>
 <head>
-    <title>Title</title>
+    <link rel="stylesheet" href="<c:url value="/recursos/stylesheets/foundation.min.css"/>" />
+    <link rel="stylesheet" href="<c:url value="/recursos/stylesheets/estilo.css"/>" />
+    <title><tiles:getAsString name="titulo" /></title>
+    <script type="text/javascript" src="<c:url value="/recursos/javascripts/jquery.js"/>"></script>
 </head>
 <body>
 
+    <tiles:insertAttribute name="cabecalho" />
+
+    <tiles:insertAttribute name="conteudo" />
+
+    <tiles:insertAttribute name="rodape" />
 </body>
 </html>

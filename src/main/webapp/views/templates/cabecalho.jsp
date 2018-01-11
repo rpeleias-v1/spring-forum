@@ -1,16 +1,17 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:38
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-</body>
-</html>
+<div class="row">
+    <div class="three columns">
+        <h1>
+            <a href="<c:url value="/" />"><img src="<c:url value="/recursos/images/logotipo.png" />"></a>
+        </h1>
+    </div>
+    <div class="five columns right">
+
+        <form style="margin-top: 1.0em;" action="<c:url value="/j_spring_security_check" />">
+
+        </form>
+
+    </div>
+</div>

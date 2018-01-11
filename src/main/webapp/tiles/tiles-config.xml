@@ -12,6 +12,11 @@
         <put-attribute name="conteudo" value="/views/index.jsp" />
     </definition>
 
+    <definition name="registro" extends="main">
+        <put-attribute name="conteudo" value="/views/signup.jsp" />
+        <put-attribute name="titulo" value="Bem vindo(a)!" />
+    </definition>
+
     <definition name="usuario/show" extends="main">
         <put-attribute name="conteudo" value="/views/usuario/show.jsp" />
         <put-attribute name="titulo" value="Detalhes dp usuário" />
