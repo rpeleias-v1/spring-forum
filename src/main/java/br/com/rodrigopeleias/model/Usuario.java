@@ -109,6 +109,7 @@ public class Usuario implements Serializable {
     }
 
     public void setSenha(String senha) {
+        setHashSenha(org.apache.commons.codec.digest.DigestUtils.sha256Hex(senha));
         this.senha = senha;
     }
 

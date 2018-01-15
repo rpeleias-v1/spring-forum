@@ -1,16 +1,16 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:39
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-</body>
-</html>
+<table>
+    <thead>
+        <th>Assunto</th>
+        <th>Título</th>
+    </thead>
+    <tbody>
+        <c:forEach items="${topicos}" var="post" >
+            <tr>
+                <td>${post.assunto.nome}</td>
+                <td>${post.titulo}</td>
+            </tr>
+        </c:forEach>
+    </tbody>
+</table>

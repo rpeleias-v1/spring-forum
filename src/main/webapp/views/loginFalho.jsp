@@ -1,16 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: rodrigopeleias
-  Date: 09/01/18
-  Time: 23:38
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<div class="row">
+    <h3>Usuário inválido!</h3>
 
-</body>
-</html>
+    <p>Perdeu a sua senha? Preencha o e-mail no formulário abaixo e uma senha nova será gerada para você.</p>
+
+    <form action="retrieve">
+        <input type="text" name="email" placeholder="Seu e-mail" />
+        <input type="submit" value="Resetar senha" class="tiny button success" style="width: auto; float: right">
+    </form>
+</div>

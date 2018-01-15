@@ -2,6 +2,7 @@ package br.com.rodrigopeleias.model;
 
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
+import org.springframework.security.core.GrantedAuthority;
 
 
 import javax.persistence.*;
@@ -9,7 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "permissao_usuario")
-public class PermissaoUsuario implements Serializable{
+public class PermissaoUsuario implements GrantedAuthority, Serializable{
 
     @Id
     @Generated(GenerationTime.INSERT)
